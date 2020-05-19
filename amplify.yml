@@ -1,0 +1,26 @@
+version: 1.0
+env:
+  variables:
+      VERSION_HUGO: 0.71.0
+frontend:
+  phases:
+    build:
+      commands:
+        - env
+        - export IMAGE_TAG=$(echo ${AWS_COMMIT_ID} | cut -c1-7)
+          # - echo "<p class="build-number">${IMAGE_TAG}</p>" >> layouts/partials/menu-footer.html
+        - git submodule update --init --recursive
+        - wget https://github.com/gohugoio/hugo/releases/download/v${VERSION_HUGO}/hugo_extended_${VERSION_HUGO}_Linux-64bit.tar.gz
+        - tar -xvf hugo_extended_${VERSION_HUGO}_Linux-64bit.tar.gz hugo
+        - mv -v hugo /usr/bin/hugo
+        - chmod +x /usr/bin/hugo
+        - ls -l /usr/bin/hugo
+        - rm -rvf hugo_extended_${VERSION_HUGO}_Linux-64bit.tar.gz
+        - hugo -v
+  artifacts:
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: public
+    files:
+      - '**/*'
+  cache:
+    paths: []
