@@ -5,8 +5,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
-title = "Projects"
-subtitle = ""
+title = "What's New?"
+subtitle = "Latest Published Courses"
 
 [content]
   # Page type to display. E.g. project.
@@ -21,17 +21,34 @@ subtitle = ""
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
   filter_default = 0
   
-  # [[content.filter_button]]
-  #   name = "All"
-  #   tag = "*"
+  [[content.filter_button]]
+    name = "All"
+    tag = "*"
   
-  # [[content.filter_button]]
-  #   name = "Deep Learning"
-  #   tag = "Deep Learning"
+  [[content.filter_button]]
+    name = "Cloud 9"
+    tag = "Cloud 9"
   
-  # [[content.filter_button]]
-  #   name = "Other"
-  #   tag = "Demo"
+  [[content.filter_button]]
+    name = "Docker Basics"
+    tag = "Docker Basics"
+
+  [[content.filter_button]]
+    name = "Security"
+    tag = "Security"
+
+  [[content.filter_button]]
+    name = "EKS"
+    tag = "EKS"
+
+  [[content.filter_button]]
+    name = "ECS"
+    tag = "ECS"
+
+  [[content.filter_button]]
+    name = "App Mesh"
+    tag = "App Mesh"
+
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
