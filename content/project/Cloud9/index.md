@@ -9,14 +9,13 @@ date: "2020-05-17T00:00:00Z"
 external_link: ""
 
 image:
-  caption: Photo by rawpixel on Unsplash
   focal_point: Smart
 
-links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+# links:
+# - icon: twitter
+#   icon_pack: fab
+#   name: Follow
+#   url: https://twitter.com/georgecushen
 url_code: ""
 url_pdf: ""
 url_slides: ""
@@ -27,16 +26,14 @@ url_video: ""
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+slides: slides
 ---
 
 # Containers University
 
-# Video 0
-
 {{< vimeo 419093608 >}}
 
-## Introduction to AWS Cloud9 - 100 level
+## Introduction to AWS Cloud9 - 900 level
 
 - Welcome to the Introduction to AWS Cloud9! The goal of this chapter is to gain a better understanding of how we can setup a cloud based IDE in AWS, and use it's features to speed up development cycles.
 - We will look at what Cloud9 provides us as an IDE for AWS, and look at the features and configurations available. Lastly, we will learn how we can use Cloud9 to manage resources in AWS.
