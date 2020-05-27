@@ -32,6 +32,7 @@ function do_update () {
     version="${version}.0"
     echo "Set Netlify Hugo version to v${version}"
     sed -i.bak -e "s/HUGO_VERSION = .*/HUGO_VERSION = \"$version\"/g" ./netlify.toml && rm -f ./netlify.toml.bak
+    sed -i.bak -e "s/HUGO_VERSION:.*/HUGO_VERSION: $version/g" ./amplify.yml && rm -f ./amplify.yml.bak
   fi
 
   echo
